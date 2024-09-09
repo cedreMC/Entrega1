@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card-header>
+    <ion-card-title id="tittle" size="large" class="titulo">Bienvenido!</ion-card-title>
+</ion-card-header>
+
+  
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-card id="borde">
+          <ion-grid fixed>
+            <ion-item>
+              <h3><ion-input style="font-family:'Roboto';" label="Email:" labelPlacement="stacked" name="email" [(ngModel)]="email" type="email" placeholder="Ingrese su correo.."></ion-input></h3>
+            </ion-item>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+
+
+  
+    <ion-row>
+      <ion-col size="1"></ion-col>
+      <ion-col size="10">
+        <ion-card id="borde">
+          <ion-grid fixed>
+            <ion-item>
+              <h3><ion-input style="font-family:'Roboto';" label="Contraseña:" labelPlacement="stacked" name="con" [(ngModel)]="con" type="text" placeholder="Ingrese su contraseña.."></ion-input></h3>
+            </ion-item>
+          </ion-grid>
+        </ion-card>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row>
+
+    
+
+    <ion-row>
+      <ion-col size="3"></ion-col>
+      <ion-col size="6">
+          <ion-grid fixed>
+            <ion-img id="imagen.logo" src="assets/logo-removebg.png" size="100%"></ion-img>
+          </ion-grid>
+      </ion-col>
+      <ion-col size="3"></ion-col>
+    </ion-row>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="button1" >
+      <ion-fab-button size="large"  (click)="goTab1()" color="danger">
+        <ion-icon name="arrow-forward-outline" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <ion-fab vertical="bottom" horizontal="start" slot="fixed" id="button1" >
+      <ion-fab-button size="large"  (click)="registro()" color="danger">
+        <ion-icon name="add-outline" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+</ion-content>

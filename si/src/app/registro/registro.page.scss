@@ -1,0 +1,16 @@
+#tittle{
+    text-align: center;
+    text-size-adjust: 10px;
+}//
+
+#borde{
+    border: 2px solid #333333; /* Borde del card */
+    border-radius: 5px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgb #e8e8e7; /* Sombra para darle profundidad */
+
+}
+
+.resizable-image {
+    width: 40px;  // Cambia el tamaño según tus necesidades
+    height: 40px; // Cambia el tamaño según tus necesidades
+  }
