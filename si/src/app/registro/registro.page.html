@@ -1,0 +1,81 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/"
+          text=""
+          color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">
+        <ion-img id="imagen.logo" src="assets/logo-removebg.png"  class="resizable-image " ></ion-img>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card-header>
+    <ion-card-title id="tittle" size="large" class="titulo">Ingrese sus Datos</ion-card-title>
+  </ion-card-header>
+
+
+  
+  <ion-card id="borde"> 
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6">
+        <h2><ion-input style="font-family:'Roboto';" label="Nombre:" labelPlacement="stacked" name="nom" [(ngModel)]="nom" type="text" placeholder="Ingrese su Nombre.."></ion-input></h2>
+      </ion-col>
+      <ion-col size="6">
+        <h2><ion-input style="font-family:'Roboto';" label="Telefono:" labelPlacement="stacked" name="num" [(ngModel)]="num" type="number" placeholder="Ingrese su Telefono.."></ion-input></h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-card>
+
+
+  <ion-card id="borde">
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6">
+        <h2><ion-input style="font-family:'Roboto';" label="Email:" labelPlacement="stacked" name="email" [(ngModel)]="email" type="email" placeholder="Ingrese su correo.."></ion-input></h2>
+      </ion-col>
+      <ion-col size="6">
+        <h2><ion-input style="font-family:'Roboto';" label="Contraseña:" labelPlacement="stacked" name="con" [(ngModel)]="con" type="text" placeholder="Ingrese su contraseña.."></ion-input></h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-card>
+
+  <ion-card id="borde">
+    <h2><ion-input style="font-family:'Roboto';" label="Direccion:" labelPlacement="stacked" name="dire" [(ngModel)]="dire" type="text" placeholder="Ingrese su Direccion.."></ion-input></h2>
+  </ion-card>
+
+  <ion-card id="borde">
+    <ion-list>
+      <ion-item class="item">
+        <ion-select label="Escuela:" interface="popover" [(ngModel)]="carre" placeholder="Seleccione la Escuala " labelPlacement="stacked" style="font-family:'Roboto'; font-size: 21px;" >
+          <ion-select-option >Escuala de Informatica</ion-select-option>
+          <ion-select-option >Escuala de Arquitectura</ion-select-option>
+          <ion-select-option >Escuala de Quimica</ion-select-option>
+          <ion-select-option >Escuala de Odontologia</ion-select-option>
+          <ion-select-option >Escuala de Enfermeria</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="button1" >
+    <ion-fab-button size="large"  (click)="goTab1()" color="danger">
+      <ion-icon name="arrow-forward-outline" ></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
