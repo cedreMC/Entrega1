@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="titulo">
+      Perfil
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/"
+          text=""
+          color="light"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content [fullscreen]="true"> 
+  <ion-card-header>
+    <ion-card-title class="titulo">Estudiante:</ion-card-title>
+  </ion-card-header>
+
+  <ion-card class="cardpipe">
+    <ion-card-header>
+      <ion-card-title style="font-family:'Roboto';">Felipe Sandoval</ion-card-title>
+      <br>
+      <ion-card-subtitle style="font-family:'Roboto'; font-size: 21px;">Ingenieria Informatica</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-icon name="mail-outline" slot="start" type="email"></ion-icon>
+        <ion-label style="font-family:'Roboto'; font-size: 21px;">feli.sandovals㋡duocuc.cl</ion-label>
+      </ion-item>
+  
+      <ion-item lines="none">
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label style="font-family:'Roboto'; font-size: 21px;">+56945438392</ion-label>
+      </ion-item>
+  
+      <ion-item lines="none">
+        <ion-icon name="location-outline" slot="start"></ion-icon>
+        <ion-label style="font-family:'Roboto'; font-size: 21px;">Maipú, Santiago</ion-label>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
