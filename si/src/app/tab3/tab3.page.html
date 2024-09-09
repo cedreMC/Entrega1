@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title class="titulo">
+      Capturar Lista
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="mostrarMenu()" >
+        <ion-icon slot="end" name="settings-outline"  size="large" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="texto">
+    <ion-card-header>
+      <ion-card-title class="titulo">Ingrese Datos de la Clase</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-list lines="none">
+  
+        <ion-item class="item">
+          <ion-select label="Sección:" interface="popover" [(ngModel)]="seccion" placeholder="Seleccione sección:" labelPlacement="stacked" class="texto" >
+            <ion-select-option class="texto">001D</ion-select-option>
+            <ion-select-option class="texto">002D</ion-select-option>
+            <ion-select-option class="texto">003D</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <br>
+        <ion-item class="item">
+          <ion-select label="Asignatura" interface="popover" [(ngModel)]="asignatura" placeholder="Seleccione Asignatura" labelPlacement="stacked" class="texto">
+            <ion-select-option >Programación Web</ion-select-option>
+            <ion-select-option>Programación de App Móvil</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input label="Sala:" labelPlacement="stacked" name="sala" [(ngModel)]="sala" placeholder="Ingrese N° Sala" class="texto"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item style="--padding-start: 0;">
+          <ion-label position="stacked" style=" color: #000000;" style="font-family:'Roboto'; font-size: 21px;" >Fecha:</ion-label>
+          <br>
+          <ion-datetime [(ngModel)]="fecha" presentation="date" [preferWheel]="true" display-format="DD/MM/YYYY"placeholder="Seleccionar Fecha" class="texto"></ion-datetime>
+        </ion-item>
+        
+        <br>
+      </ion-list>
+    </ion-card-content>
+    <div id="centrar">
+      <ion-button (click)="mensaje()" fill="solid" shape="round" class="boton" color="danger" style="font-family:'Roboto';">
+        Abrir Camara
+      </ion-button>
+    </div>
+  </ion-card>
+</ion-content>
